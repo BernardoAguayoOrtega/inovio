@@ -1,5 +1,5 @@
 //-variables
-- let arrow = "fa fa-long-arrow-right"
+- let arrow = "fa fa-long-arrow-alt-right"
 - let plus = "fa fa-plus"
 - let menu_items = ["home","pages","portfolio","blog","shop","elements"]
 //- link of font awesome font
@@ -26,5 +26,5 @@ mixin card-without-img(title,text)
 //- header menu
 mixin header-menu
     each element in menu_items
-        i(class=arrow) 
+        i(class=arrow)
         a(href="#")=element

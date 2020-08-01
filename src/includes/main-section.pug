@@ -1,0 +1,28 @@
+//-include mixins
+include mixins.pug
+
+main.main
+    header.header-main
+        .left-size
+            h2 innovio
+        nav.nav
+            +header-menu
+        .right-size
+            a(href="#")
+                i(class="fa fa-search")
+            a(href="#")
+                i(class="fa fa-shopping-bag")
+            a(href="#")
+                i(class="fa fa-bars")                           
+    .content
+        .info-content
+            h1. 
+                All you need for your business
+            p. 
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem doloribus a reiciendis nam sequi asperiores?
+            .buttons
+                +button("Read More")
+                +button("Get Innovio")
+        .img-content
+            figure
+                img(src="#", alt="image of main section")
