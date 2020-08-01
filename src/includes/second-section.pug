@@ -1,0 +1,24 @@
+//-include mixins
+include mixins.pug
+//-second section
+//start second section
+section.second-section
+    //start header 
+    header.second-section__header
+        i
+        p
+    //finish header
+    //start info section
+    .second-section__info
+        h1
+        p
+    //finish info section
+    //start cards section
+    .second-section__cards-container
+        +card-with-img("#","image of card","Engine optimization")
+        +card-with-img("#","image of card","Social media strategy")
+        +card-with-img("#","image of card","Real time and data")
+        +card-with-img("#","image of card","Online media management")
+    //finish cards section
+//finish second section
+        
