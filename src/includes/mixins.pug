@@ -28,3 +28,11 @@ mixin header-menu
     each element in menu_items
         i(class=arrow)
         a(href="#")=element
+//- img with id
+mixin image-with-id(id,src,alt)
+    figure(id=id)
+        img(src=src, alt=alt)
+//- img without id
+mixin image-without-id(src,alt)
+    figure
+        img(src=src, alt=alt)
