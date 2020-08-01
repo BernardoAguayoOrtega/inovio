@@ -1,6 +1,7 @@
 //-variables
 - let arrow = "fa fa-long-arrow-right"
 - let plus = "fa fa-plus"
+- let menu_items = ["home","pages","portfolio","blog","shop","elements"]
 //- link of font awesome font
 link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css")
 //-button mixin
@@ -14,10 +15,16 @@ mixin card-with-img(src,alt,text)
         figure
             img(src= src, alt= alt)
         h2=text
+        i
 //- card without img
 mixin card-without-img(title,text)
     .card-without-image
         h1=title   
         p=text
-        a Read More 
+        a(href="#") Read More 
             i(class=plus)
+//- header menu
+mixin header-menu
+    each element in menu_items
+        i(class=arrow) 
+        a(href="#")=element

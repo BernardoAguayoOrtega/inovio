@@ -1,0 +1,17 @@
+.example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0c204e;
+}
+.example a {
+  margin: 0 1rem;
+}
+.example i {
+  visibility: hidden;
+}
+.example a:hover,
+.example i {
+  color: #f84933;
+  visibility: visible;
+}

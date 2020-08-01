@@ -1,0 +1,64 @@
+@import './variables'
+
+button()
+    padding: .5rem 2rem
+    color: white
+    & i 
+        color white
+
+button-tomato()
+    background: color-a
+
+button-midnightblue()
+    background: color-b 
+
+text-color()
+    color: text-color
+
+card-with-img()
+    color: color-b
+    display: grid
+    padding: 1rem
+    gap: 1rem 0
+    & h2
+        font-size: 2rem
+    & figure 
+    img
+        width: 100%
+    & i 
+        min-width: 1rem
+        border-bottom: .1rem solid color-b
+
+card-without-img()
+    color: color-b
+    display: grid
+    padding: 1rem
+    gap 1rem 0
+    & h1
+        font-size: 2rem
+    & p
+        color: text-color
+    & a
+        margin-right: .5rem
+    & i
+        color: color-b
+
+header-menu()
+    display flex
+    justify-content: center
+    align-items: center
+    color: color-b
+    & a 
+        margin: 0 1rem
+    & i
+        visibility: hidden
+    & a:hover
+    i     
+        color: color-a
+        visibility: visible       
+    
+.example
+    header-menu()
+
+
+
