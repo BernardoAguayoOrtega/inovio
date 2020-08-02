@@ -4,12 +4,11 @@ mixin button(text,href)
         a(href=href) #{text}
             i(class=arrow)
 //- card with image
-mixin card-with-img(src,alt,text)
-    .card-with-image
+mixin card-with-img(src,alt,text,id)
+    .card-with-image(id=id)
         figure
             img(src= src, alt= alt)
         h2=text
-        i
 //- card without img
 mixin card-without-img(title,text)
     .card-without-image

@@ -387,8 +387,8 @@
   .content {
     padding: 1rem;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     grid-template-areas: ". . . . img img img" ". info info info img img img" ". info info info img img img" ". info info info img img img" ". . . . img img img";
   }
   .content__info {
