@@ -115,3 +115,45 @@
                 border .1rem solid color-b
             & #image4
                 grid-area: img4     
+/*small screenns desktop*/
+@media screen and (min-width:1024px) and (max-width:1439px)
+    .fourth-section
+        display: grid
+        grid-template-rows: 7rem 1fr
+        & .fourth-section__info-section
+            padding: 1rem
+            text-align: center
+            & h1
+                color: color-b
+                font-size: 2.5rem
+            & strong 
+                color: color-a
+            & p
+                font-size: .7rem
+                color: txt-color
+                font-weight: 600
+                margin: 1rem 0
+        & .fourth-section__img-section
+            margin-top: 2rem
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+            grid-template-rows: 1fr 1fr
+            grid-template-areas: "img1 img1 img2 img4 img4" "img1 img1 img3 img4 img4"
+            gap .5rem
+            & figure 
+                width: 100%
+                & img 
+                    width: 90% 
+            & #image1
+                grid-area: img1
+
+            & #image2
+                grid-area: img2
+                border .1rem solid color-a
+                & img 
+                    width: 100%
+            & #image3
+                grid-area: img3
+                border .1rem solid color-b
+            & #image4
+                grid-area: img4
