@@ -1,0 +1,49 @@
+/*imports*/
+/*small mobiles and medium mobiles*/
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  .fourth-section {
+    display: grid;
+    grid-template-rows: 7rem 1fr;
+  }
+  .fourth-section .fourth-section__info-section {
+    padding: 1rem;
+    text-align: center;
+  }
+  .fourth-section .fourth-section__info-section h1 {
+    color: #0c204e;
+    font-size: 1.6rem;
+  }
+  .fourth-section .fourth-section__info-section strong {
+    color: #f84933;
+  }
+  .fourth-section .fourth-section__info-section p {
+    color: #9c9da9;
+    font-weight: 600;
+    margin: 1rem 0;
+  }
+  .fourth-section .fourth-section__img-section {
+    display: grid;
+    grid-template-columns: 15rem 15rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "img1 img1" "img2 img4" "img3 img3";
+  }
+  .fourth-section .fourth-section__img-section figure {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .fourth-section .fourth-section__img-section figure img {
+    width: 100%;
+  }
+  .fourth-section .fourth-section__img-section #image1 {
+    grid-area: img1;
+  }
+  .fourth-section .fourth-section__img-section #image2 {
+    grid-area: img2;
+  }
+  .fourth-section .fourth-section__img-section #image3 {
+    grid-area: img3;
+  }
+  .fourth-section .fourth-section__img-section #image4 {
+    grid-area: img4;
+  }
+}

@@ -1,0 +1,38 @@
+/*imports*/
+@import './variables'
+@import './mixin'
+/*small mobiles and medium mobiles*/
+@media screen and (min-width:320px) and (max-width:424px)
+    .fourth-section
+        display: grid
+        grid-template-rows: 7rem 1fr
+        & .fourth-section__info-section
+            padding: 1rem
+            text-align: center
+            & h1
+                color: color-b
+                font-size: 1.6rem
+            & strong 
+                color: color-a
+            & p
+                color: txt-color
+                font-weight: 600
+                margin: 1rem 0
+        & .fourth-section__img-section
+            display: grid
+            grid-template-columns: 15rem 15rem
+            grid-template-rows: 1fr 1fr 1fr
+            grid-template-areas:"img1 img1" "img2 img4" "img3 img3"
+            & figure 
+                width: 90%
+                margin: 0 auto
+                & img 
+                    width: 100% 
+            & #image1
+                grid-area: img1
+            & #image2
+                grid-area: img2
+            & #image3
+                grid-area: img3
+            & #image4
+                grid-area: img4                
