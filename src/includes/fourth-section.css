@@ -24,8 +24,9 @@
   .fourth-section .fourth-section__img-section {
     display: grid;
     grid-template-columns: 15rem 15rem;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "img1 img1" "img2 img4" "img3 img3";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "img1 img1" "img2 img2" "img3 img3" "img4 img4";
+    justify-content: center;
   }
   .fourth-section .fourth-section__img-section figure {
     width: 90%;
