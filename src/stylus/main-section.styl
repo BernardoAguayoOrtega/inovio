@@ -57,6 +57,8 @@
     .content__info
         & h1
             color: color-b
+        & strong 
+            color: color-a        
         & p
             color: txt-color
             font-weight: 600
@@ -131,6 +133,8 @@
     .content__info
         & h1
             color: color-b
+        & strong 
+            color: color-a
         & p
             color: txt-color
             font-weight: 600
@@ -207,6 +211,8 @@
     .content__info
         & h1
             color: color-b
+        & strong 
+            color: color-a
         & p
             color: txt-color
             font-weight: 600
@@ -230,5 +236,92 @@
         justify-content: center
         & figure
             max-width 70vw
+        & img 
+            width: 100%
+/*small desktop screens*/
+@media screen and (min-width:1024px) and (max-width:1439px)
+    html
+        font-size: 20px
+    /*main section styles*/
+    .main
+        background-color: white
+    /*header*/
+    .main__header
+        display: grid
+        padding: 1rem
+        grid-template-columns: .1fr 1fr .15fr
+    /*left size*/
+    .main__left-size
+        color: color-b
+        margin: 0 auto
+        font-size: 1.5rem
+    /*nav*/
+    .main__nav
+        display flex
+        justify-content: center
+        align-items: center
+        header-menu()
+        font-weight: 600
+        & a
+            font-size: .7rem
+            margin 0 1rem
+    /*right size*/
+    .main__right-size
+        display flex
+        justify-content: space-between
+        align-items: center
+        font-size: .5rem    
+        & i
+            color: txt-color
+            padding: .5rem
+            border: .1rem solid txt-color
+            border-radius: 100%            
+        & .fa-bars
+            color: white 
+            background: color-a
+            border: .1rem solid color-a
+            border-radius: 100%
+    /*content*/
+    .content 
+        padding: 1rem
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr
+        grid-template-areas: ". . . . img img img" ". info info info img img img" ". info info info img img img" ". info info info img img img" ". . . . img img img"
+    /*content info*/
+    .content__info
+        grid-area: info
+        text-align: center
+        font-size: .5rem
+        margin auto
+        & h1
+            color: color-b
+            font-size: 2.5rem
+        & strong 
+            color: color-a
+        & p
+            color: txt-color
+            font-weight: 600
+            margin 1rem 0
+            font-size: .7rem
+        & .buttons
+            margin 2rem 0
+            display flex
+            justify-content: center
+        & .button
+            button()
+            padding: .5rem .5rem
+        & #button1
+            button-tomato()
+            margin-right 1rem
+        & #button2
+            button-midnightblue()
+    /*content image*/
+    .content__img
+        grid-area: img
+        display: flex
+        justify-content: center
+        & figure
+            max-width 100vw
         & img 
             width: 100%
