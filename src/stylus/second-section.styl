@@ -117,3 +117,63 @@
         & h2
             color: color-b
             font-size: 1.5rem
+/*tablet mobiles*/
+@media screen and (min-width:768px) and (max-width:1023px)
+    /*second section*/
+    .second-section
+        display: grid
+        grid-template-rows:3rem 10rem 1fr
+    /*second-section__header*/
+    .second-section__header
+        padding: 1rem
+        display: flex
+        color: txt-color
+        /*circle 1*/
+        & #circle1
+            color: black
+            padding 0 .5rem
+            font-size: .8rem
+        /*circle 3*/
+        & #circle2
+            color: color-a
+            padding 0 .5rem
+            font-size: .7rem
+        /*circle 3*/
+        & #circle3
+            color: txt-color
+            padding 0 .5rem
+            font-size: .6rem
+        & p
+            padding: 0 .5rem
+    /*second section info*/
+    .second-section__info
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        & h1
+            color: color-b
+            font-size: 3rem
+        & strong
+            color: color-a
+        & p
+            font-size: 1.5rem
+            color: txt-color
+            margin 1.5rem 0
+            padding:0 1rem
+    /*second section cards*/
+    .second-section__cards-container
+        display: grid
+        grid-template-columns: 1fr 1fr
+        gap .5rem
+        padding: 1rem
+        text-align: center
+        & figure
+            margin: 0 auto         
+            width: 90%
+            & img
+                width: 100%
+        & h2
+            color: color-b
+            font-size: 1.5rem
