@@ -6,7 +6,7 @@ main.main
     //start header
     header.main__header
         //left size
-        .left-size
+        .main__left-size
             h2 innovio
         // nav section
         nav.main__nav
@@ -29,11 +29,13 @@ main.main
             p. 
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem doloribus a reiciendis nam sequi asperiores?
             .buttons
-                +button("Read More")
-                +button("Get Innovio")
+                #button1
+                    +button("Read More","#")
+                #button2    
+                    +button("Get Innovio","#")
         //content image
         .content__img
             figure
-                img(src="#", alt="image of main section")
+                img(src="https://storytale.io/wp-content/uploads/2020/03/stubborn-13-done.png", alt="image of main section")
     //finish content 
 //finish main section

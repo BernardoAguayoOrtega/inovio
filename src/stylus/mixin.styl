@@ -1,16 +1,19 @@
-@import './variables'
-
 button()
     padding: .5rem 2rem
-    color: white
     & i 
+        margin-left: .5rem
         color white
+    & a
+        text-decoration: none
+        color: white
 
 button-tomato()
     background: color-a
+    border-radius: .5rem
 
 button-midnightblue()
     background: color-b 
+    border-radius: .5rem
 
 text-color()
     color: text-color
@@ -44,19 +47,13 @@ card-without-img()
         color: color-b
 
 header-menu()
-    display flex
-    justify-content: center
-    align-items: center
-    color: color-b
-    & a 
-        margin: 0 1rem
-    & i
-        visibility: hidden
+    & a
+        transition: 1s
+        color: color-b
+        text-decoration: none
+        font-size: 1.3rem
     & a:hover
-    i     
-        color: color-a
-        visibility: visible       
-    
-
-
-
+        color:color-a 
+        position: relative
+        top:-1rem 
+        transition: .3s  

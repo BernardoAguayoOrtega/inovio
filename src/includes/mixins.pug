@@ -1,7 +1,7 @@
 //-button mixin
-mixin button(text)
+mixin button(text,href)
     .button
-        a(href="#") #{text}
+        a(href=href) #{text}
             i(class=arrow)
 //- card with image
 mixin card-with-img(src,alt,text)
@@ -20,8 +20,8 @@ mixin card-without-img(title,text)
 //- header menu
 mixin header-menu
     each element in menu_items
-        i(class=arrow)
-        a(href="#")=element
+        .element
+            a(href="#")=element            
 //- img with id
 mixin image-with-id(id,src,alt)
     figure(id=id)

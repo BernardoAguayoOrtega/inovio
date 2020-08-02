@@ -1,0 +1,78 @@
+/*imports*/
+@import './variables'
+@import './mixin'
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap')
+/*general styles*/
+*{
+    padding: 0
+    margin: 0
+    font-family: 'Roboto', sans-serif
+}
+/*small mobiles and medium mobiles*/
+@media screen and (min-width:320px) and (max-width:424px)
+    html
+        font-size: 10px
+    /*main section styles*/
+    .main
+        background-color: white
+    /*header*/
+    .main__header{
+        display: grid
+        padding: 1rem
+        grid-template-rows: 5rem 10rem 3rem
+    }    
+    /*left size*/
+    .main__left-size
+        color: color-b
+        margin: 0 auto
+        font-size: 2.5rem
+    /*nav*/
+    .main__nav
+        display flex
+        justify-content: space-between
+        align-items: center
+        header-menu()
+    /*right size*/
+    .main__right-size
+        display flex
+        justify-content: space-between
+        align-items: center
+        font-size: 2rem    
+        & i
+            color: txt-color
+        & .fa-bars
+            color: color-a 
+    /*content*/
+    .content 
+        padding: 1rem
+        display: flex
+        flex-direction: column
+        text-align: center
+    /*content info*/
+    .content__info
+        & h1
+            color: color-b
+        & p
+            color: txt-color
+            font-weight: 600
+            margin 1rem 0
+        & .buttons
+            margin 1rem 0
+            display flex
+            justify-content: center
+        & .button
+            button()
+        & #button1
+            margin 0 1rem
+            button-tomato()
+        & #button2
+            button-midnightblue()
+            margin 0 1rem
+    /*content image*/
+    .content__img
+        display: flex
+        justify-content: center
+        & figure
+            max-width 90vw
+        & img 
+            width: 100%
