@@ -80,3 +80,85 @@
     border-radius: 100%;
   }
 }
+@media screen and (min-width: 425px) and (max-width: 767px) {
+  .third-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .third-section__info-container {
+    border-top: 0.1rem solid #9c9da9;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .third-section__info-container .third-section__info-container-img figure {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .third-section__info-container .third-section__info-container-img figure img {
+    width: 100%;
+  }
+  .third-section__info-container .third-section__info-container-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .third-section__info-container .third-section__info-container-info h1 {
+    color: #0c204e;
+    font-size: 1.5rem;
+  }
+  .third-section__info-container .third-section__info-container-info strong {
+    color: #f84933;
+  }
+  .third-section__info-container .third-section__info-container-info p {
+    color: #9c9da9;
+    font-weight: 600;
+    margin: 2rem 0;
+  }
+  .third-section__info-container .third-section__info-container-info .button {
+    width: 7rem;
+    padding: 0.5rem 2rem;
+    background: #f84933;
+    border-radius: 0.5rem;
+  }
+  .third-section__info-container .third-section__info-container-info .button i {
+    margin-left: 0.5rem;
+    color: #fff;
+  }
+  .third-section__info-container .third-section__info-container-info .button a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .third-section__cards-container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .third-section__cards-container h1 {
+    color: #0c204e;
+    font-size: 1.7rem;
+  }
+  .third-section__cards-container p {
+    color: #9c9da9;
+    font-weight: 600;
+    margin: 1.5rem 0;
+  }
+  .third-section__cards-container a {
+    text-decoration: none;
+    color: #000;
+  }
+  .third-section__cards-container i {
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    border: 0.1rem solid #9c9da9;
+    padding: 0.5rem;
+    border-radius: 100%;
+  }
+}
