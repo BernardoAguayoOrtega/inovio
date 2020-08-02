@@ -185,8 +185,74 @@
             border: .1rem solid txt-color
             padding: .5rem
             border-radius: 100%
-/*Tablets*/
+/*small screen desktop*/
 @media screen and (min-width:1024px) and (max-width:1439px)
+    .third-section
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    /*info container*/
+    .third-section__info-container
+        border-top: .1rem solid txt-color
+        padding: 1rem
+        margin 0 1rem
+        display: grid
+        grid-template-columns: 1fr .5fr
+        justify-content: center
+        align-items: center
+        & .third-section__info-container-img
+            & figure
+                margin: 0 auto
+                width: 90%
+                & img 
+                    width: 100%
+        & .third-section__info-container-info
+            display:flex
+            flex-direction: column
+            align-items:  flex-start
+            text-align: left
+            & h1 
+                color: color-b
+                font-size: 1.5rem
+            & strong 
+                color: color-a
+            & p
+                color: txt-color
+                font-weight: 600
+                margin 2rem 0
+            & .button
+                width: 7rem
+                button() 
+                button-tomato()
+    /*cards section*/
+    .third-section__cards-container
+        padding: 5rem
+        display: flex
+        text-align: left
+        & h1
+            color: color-b
+            font-size: 1rem
+        & p
+            color: txt-color
+            font-weight: 600
+            margin: 1.5rem 0
+            font-size: .7rem
+        & a
+            text-decoration: none
+            color: black
+            font-size: .7rem
+        & i
+            font-size: .7rem
+            margin-left: 1rem
+            margin-bottom: 2rem
+            border: .1rem solid txt-color
+            padding: .5rem
+            border-radius: 100%
+        & .card-without-image
+            padding: 1rem
+/*small screen desktop*/
+@media screen and (min-width:1440px) and (max-width:2589px)
     .third-section
         display: flex
         flex-direction: column
