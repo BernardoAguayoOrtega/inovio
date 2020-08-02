@@ -155,3 +155,80 @@
             max-width 90vw
         & img 
             width: 100%
+/*Tablets*/
+@media screen and (min-width:768px) and (max-width:1023px)
+    html
+        font-size: 15px
+    /*main section styles*/
+    .main
+        background-color: white
+    /*header*/
+    .main__header
+        display: grid
+        padding: 1rem
+        grid-template-columns: .5fr 1fr .5fr
+    /*left size*/
+    .main__left-size
+        color: color-b
+        margin: 0 auto
+        font-size: 1.5rem
+    /*nav*/
+    .main__nav
+        display flex
+        justify-content: space-between
+        align-items: center
+        header-menu()
+        font-weight: 600
+        & a
+            font-size: 1rem
+    /*right size*/
+    .main__right-size
+        display flex
+        justify-content: space-evenly
+        align-items: center
+        font-size: 1rem    
+        & i
+            color: txt-color
+            padding: .5rem
+            border: .1rem solid txt-color
+            border-radius: 100%            
+        & .fa-bars
+            color: white 
+            background: color-a
+            border: .1rem solid color-a
+            border-radius: 100%
+    /*content*/
+    .content 
+        padding: 1rem
+        display: flex
+        flex-direction: column
+        text-align: center
+    /*content info*/
+    .content__info
+        & h1
+            color: color-b
+        & p
+            color: txt-color
+            font-weight: 600
+            margin 1rem 0
+            font-size: 1.2rem
+        & .buttons
+            margin 1rem 0
+            display flex
+            justify-content: center
+        & .button
+            button()
+        & #button1
+            margin 0 5rem
+            button-tomato()
+        & #button2
+            button-midnightblue()
+            margin 0 5rem
+    /*content image*/
+    .content__img
+        display: flex
+        justify-content: center
+        & figure
+            max-width 70vw
+        & img 
+            width: 100%
