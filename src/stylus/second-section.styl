@@ -1,0 +1,59 @@
+/*imports*/
+@import './variables'
+@import './mixin'
+/*small mobiles and medium mobiles*/
+@media screen and (min-width:320px) and (max-width:424px)
+    /*second section*/
+    .second-section
+        display: grid
+        grid-template-rows:3rem 10rem 1fr
+    /*second-section__header*/
+    .second-section__header
+        padding: 1rem
+        display: flex
+        color: txt-color
+        /*circle 1*/
+        & #circle1
+            color: black
+            padding 0 .5rem
+            font-size: .8rem
+        /*circle 3*/
+        & #circle2
+            color: color-a
+            padding 0 .5rem
+            font-size: .7rem
+        /*circle 3*/
+        & #circle3
+            color: txt-color
+            padding 0 .5rem
+            font-size: .6rem
+        & p
+            padding: 0 .5rem
+    /*second section info*/
+    .second-section__info
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        & h1
+            color: color-b
+            font-size: 3rem
+        & strong
+            color: color-a
+        & p
+            color: txt-color
+            margin 1.5rem 0
+    /*second section cards*/
+    .second-section__cards-container
+        display: flex
+        flex-direction: column
+        padding: 1rem
+        text-align: center
+        & figure
+            margin: 0 auto         
+            width: 90%
+            & img
+                width: 100%
+        & h2
+            color: color-b
+            font-size: 2rem

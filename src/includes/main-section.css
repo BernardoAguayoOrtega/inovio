@@ -49,9 +49,15 @@
   }
   .main__right-size i {
     color: #9c9da9;
+    padding: 1rem;
+    border: 0.1rem solid #9c9da9;
+    border-radius: 100%;
   }
   .main__right-size .fa-bars {
-    color: #f84933;
+    color: #fff;
+    background: #f84933;
+    border: 0.1rem solid #f84933;
+    border-radius: 100%;
   }
   .content {
     padding: 1rem;
