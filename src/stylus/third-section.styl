@@ -1,0 +1,63 @@
+/*imports*/
+@import './variables'
+@import './mixin'
+/*small mobiles and medium mobiles*/
+@media screen and (min-width:320px) and (max-width:424px)
+    .third-section
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+    /*info container*/
+    .third-section__info-container
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 1rem
+        & .third-section__info-container-img
+            & figure
+                margin: 0 auto
+                width: 90%
+                & img 
+                    width: 100%
+        & .third-section__info-container-info
+            display:flex
+            flex-direction: column
+            align-items:  center
+            text-align: center
+            & h1 
+                color: color-b
+                font-size: 2rem
+            & strong 
+                color: color-a
+            & p
+                color: txt-color
+                font-weight: 600
+                margin 2rem 0
+            & .button
+                width: 10rem
+                button() 
+                button-tomato()
+    /*cards section*/
+    .third-section__cards-container
+        padding: 1rem
+        display: flex
+        flex-direction: column
+        text-align: center
+        & h1
+            color: color-b
+            font-size: 1.7rem
+        & p
+            color: txt-color
+            font-weight: 600
+            margin: 1.5rem 0
+        & a
+            text-decoration: none
+            color: black
+        & i
+            margin-left: 1rem
+            margin-bottom: 2rem
+            border: .1rem solid txt-color
+            padding: .5rem
+            border-radius: 100%
