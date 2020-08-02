@@ -330,4 +330,7 @@
     padding: 0.5rem;
     border-radius: 100%;
   }
+  .third-section__cards-container .card-without-image {
+    padding: 1rem;
+  }
 }
