@@ -16,6 +16,7 @@
         visibility: hidden
         opacity 0
         & .modal
+            position: relative
             padding: 1rem
             background-color: white
             display: flex
@@ -32,8 +33,21 @@
                 margin-top: 1rem
                 text-transform: uppercase
                 font-weight: 500
+                cursor pointer
             & h2
                 color: color-b
+            & .modal-close
+                position: absolute
+                top 1rem
+                right 1rem
+                font-weight: 600
+                cursor pointer
+    #welcome-label
+        position absolute
+        top 5rem
+        right 50%
+        color: color-a
+        font-weight: 500
 /*class for activing modal*/
 .active
     visibility: visible

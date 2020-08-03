@@ -15,6 +15,7 @@
     opacity: 0;
   }
   .modal-bg .modal {
+    position: relative;
     padding: 1rem;
     background-color: #fff;
     display: flex;
@@ -34,9 +35,24 @@
     margin-top: 1rem;
     text-transform: uppercase;
     font-weight: 500;
+    cursor: pointer;
   }
   .modal-bg .modal h2 {
     color: #0c204e;
+  }
+  .modal-bg .modal .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  #welcome-label {
+    position: absolute;
+    top: 5rem;
+    right: 50%;
+    color: #f84933;
+    font-weight: 500;
   }
 }
 /*class for activing modal*/

@@ -35,7 +35,12 @@ mixin modal
         .modal
             h2 Get Innovo now!
             label(for="name") Name: 
-            input(type="text" name="name")
+            input(type="text" name="name" id="name")
             label(for="name") Email: 
-            input(type="text" name="email")
-            a send
+            input(type="text" name="email" id="email")
+            a.send send
+            span.modal-close x
+//-welcome label
+mixin welcome-label
+    #welcome-label
+        p 
