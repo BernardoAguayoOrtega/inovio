@@ -1,0 +1,47 @@
+/*imports*/
+/*small mobiles and medium mobiles*/
+@media screen and (min-width: 320px) and (max-width: 424px) {
+  .modal-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .modal-bg .modal {
+    padding: 1rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+  .modal-bg .modal label {
+    margin: 1rem 0;
+    font-weight: 450;
+  }
+  .modal-bg .modal a {
+    background: #f84933;
+    border-radius: 0.5rem;
+    color: #fff;
+    padding: 0.5rem 3rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .modal-bg .modal h2 {
+    color: #0c204e;
+  }
+}
+/*class for activing modal*/
+.active {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.3s;
+}

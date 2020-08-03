@@ -1,0 +1,41 @@
+/*imports*/
+@import './variables'
+@import './mixin'
+/*small mobiles and medium mobiles*/
+@media screen and (min-width:320px) and (max-width:424px)
+    .modal-bg
+        position: fixed   
+        width: 100%
+        height 100vh
+        top 0
+        left 0
+        background-color: rgba(0,0,0,0.8)
+        display: flex
+        justify-content: center
+        align-items: center
+        visibility: hidden
+        opacity 0
+        & .modal
+            padding: 1rem
+            background-color: white
+            display: flex
+            flex-direction: column         
+            text-align: center
+            align-items:center
+            & label 
+                margin 1rem 0
+                font-weight: 450
+            & a 
+                button-tomato()
+                color white
+                padding: .5rem 3rem
+                margin-top: 1rem
+                text-transform: uppercase
+                font-weight: 500
+            & h2
+                color: color-b
+/*class for activing modal*/
+.active
+    visibility: visible
+    opacity 1
+    transition: .3s

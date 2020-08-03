@@ -1,5 +1,6 @@
 //-include variables
 include variables.pug
+include mixins.pug
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -7,6 +8,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Innovo
         //- style links
+        link(rel="shortcut icon", href="https://storytale.io/wp-content/uploads/2020/02/handsome-11-girl-in-vistual-reality.png", type="image/x-icon")
         //- link of font awesome font
         //font awesome link
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css")
@@ -19,6 +21,8 @@ html(lang="en")
         link(rel="stylesheet", href="../css/third-section.css")
         //link fourth section
         link(rel="stylesheet", href="../css/fourth-section.css")
+        //modal styles
+        link(rel="stylesheet", href="../css/modal.css")
     body
         //-include main section
         include main-section.pug
@@ -28,3 +32,6 @@ html(lang="en")
         include third-section.pug
         //-include fourth section
         include fourth-section.pug
+        //-include modal window
+        +modal
+script(src="../js/showModal.js")

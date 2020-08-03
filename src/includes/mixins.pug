@@ -29,3 +29,13 @@ mixin image-with-id(id,src,alt)
 mixin image-without-id(src,alt)
     figure
         img(src=src, alt=alt)
+//- modal 
+mixin modal
+    .modal-bg
+        .modal
+            h2 Get Innovo now!
+            label(for="name") Name: 
+            input(type="text" name="name")
+            label(for="name") Email: 
+            input(type="text" name="email")
+            a send
