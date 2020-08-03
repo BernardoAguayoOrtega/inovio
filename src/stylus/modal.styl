@@ -48,6 +48,53 @@
         right 50%
         color: color-a
         font-weight: 500
+/*Large mobiles*/
+@media screen and (min-width:425px) and (max-width:767px)
+    .modal-bg
+        position: fixed   
+        width: 100%
+        height 100vh
+        top 0
+        left 0
+        background-color: rgba(0,0,0,0.8)
+        display: flex
+        justify-content: center
+        align-items: center
+        visibility: hidden
+        opacity 0
+        & .modal
+            position: relative
+            padding: 1rem
+            background-color: white
+            display: flex
+            flex-direction: column         
+            text-align: center
+            align-items:center
+            & label 
+                margin 1rem 0
+                font-weight: 450
+            & a 
+                button-tomato()
+                color white
+                padding: .5rem 3rem
+                margin-top: 1rem
+                text-transform: uppercase
+                font-weight: 500
+                cursor pointer
+            & h2
+                color: color-b
+            & .modal-close
+                position: absolute
+                top 1rem
+                right 1rem
+                font-weight: 600
+                cursor pointer
+    #welcome-label
+        position absolute
+        top 5rem
+        right 50%
+        color: color-a
+        font-weight: 500
 /*class for activing modal*/
 .active
     visibility: visible
