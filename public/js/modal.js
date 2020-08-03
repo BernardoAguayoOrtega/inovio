@@ -29,10 +29,11 @@ let getName = () => {
 
 //add event lister to send button
 putContent.addEventListener('click', () => {
-    //variable to get email data
+    //variable to get email and name
+    let name = document.getElementById("name").value
     let email = document.getElementById("email").value
         //validation for email
-    if (email === "") {
+    if (email === "" || name === "") {
         window.alert("Complete all fields")
             // make changes
     } else {
